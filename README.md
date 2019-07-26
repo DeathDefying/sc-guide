@@ -1,0 +1,1 @@
+/8 sc to disable guide(enabled by default)

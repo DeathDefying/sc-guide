@@ -1,0 +1,11 @@
+{
+    "disableAutoUpdate": false,
+    "name": "sc-guide",
+    "author": "Yang",
+    "description": "SC guide for all bosses",
+    "options": {
+        "niceName": "SkyCruiser-Guide"
+    },
+    "servers": ["https://raw.githubusercontent.com/DeathDefying/sc-guide/master/"],
+    "supportUrl": "https://github.com/DeathDefying/sc-guide/issues"
+}

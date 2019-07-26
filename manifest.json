@@ -1,0 +1,12 @@
+{
+    "files": {
+        "README.md": "084fd6ff10c25506fe8b6a8f4c30d06e77ff2ed243fa397a4247e9e953685f24",
+        "index.js": "5df90d60f25e3e88e5f5aefeb706508ef41a8aadf8e6ccd957eb8ee4809f3338",
+        "module.json": "f86335f1899f693a4fee8a420fb9758223fa1b010000e76a21a654753000784f"
+    },
+    "defs": {
+        "S_ACTION_STAGE": 9,
+        "S_CHAT": 1,
+        "S_LOAD_TOPO": 3
+    }
+}
