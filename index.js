@@ -33,7 +33,7 @@ module.exports = function SkyCruiserGuide(mod)
         if(arg && arg.length > 0) arg = arg.toLowerCase();
         enabled = !enabled;
         mod.command.message(`Sky Cruiser Guide ${enabled ? 'Enabled' : 'Disabled'}`);
-        if(!enabled) unload();
+        if(!enabled) unload_guide();
     });
     
         mod.hook('S_LOAD_TOPO',3,(event) => {
