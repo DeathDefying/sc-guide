@@ -19,10 +19,14 @@ const secondBossActions =
     1305: {msg: 'AoE Explosions!'}
 };
 
-const thirdBossActions = 
+/*const thirdBossActions = 
 {
 
-}; 
+}; */
+
+const firstBoss = 91650;
+const secondBoss = 91606;
+//const thirdBoss = ;
 
 module.exports = function SkyCruiserGuide(mod)
 {
@@ -69,12 +73,12 @@ module.exports = function SkyCruiserGuide(mod)
                             sendMessage(secondBossActions[skill].msg);
                         }
                     break;
-                    case thirdBoss:      
+                    /*case thirdBoss:      
                         if(thirdBossActions[skill])
                         {   
                             sendMessage(thirdBossActions[skill].msg);
                         }
-                    break;
+                    break;*/
                 }
             });
         }
