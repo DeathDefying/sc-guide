@@ -19,14 +19,20 @@ const secondBossActions =
     1305: {msg: 'AoE Explosions!'}
 };
 
-/*const thirdBossActions = 
+const thirdBossActions = 
 {
-
-}; */
+    1111: {msg: 'Back Spin! (Slow)'},
+    2111: {msg: 'Back Spin! (Fast)'},
+    1301: {msg: 'Shout - Iframe'},
+    1302: {msg: 'Get Out!!!'},
+    1401: {msg: 'Right Swipe!'},
+    1402: {msg: 'Left Swipe!'}, 
+    2115: {msg: 'Circles, spread'}
+}; 
 
 const firstBoss = 91650;
 const secondBoss = 91606;
-//const thirdBoss = ;
+const thirdBoss = 1000;
 
 module.exports = function SkyCruiserGuide(mod)
 {
@@ -73,12 +79,14 @@ module.exports = function SkyCruiserGuide(mod)
                             sendMessage(secondBossActions[skill].msg);
                         }
                     break;
-                    /*case thirdBoss:      
+                    case thirdBoss:      
                         if(thirdBossActions[skill])
                         {   
                             sendMessage(thirdBossActions[skill].msg);
                         }
-                    break;*/
+                    break;
+                    default: // do nothing
+                        break;
                 }
             });
         }
