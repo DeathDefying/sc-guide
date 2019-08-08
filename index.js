@@ -37,7 +37,8 @@ const thirdBoss = 1000;
 module.exports = function SkyCruiserGuide(mod)
 {
     let hooks = [],
-    enabled = true;
+    enabled = true,
+    prev=0;
 
     mod.command.add(['sc'],(arg) => {
         if(arg && arg.length > 0) arg = arg.toLowerCase();
@@ -82,7 +83,13 @@ module.exports = function SkyCruiserGuide(mod)
                     case thirdBoss:      
                         if(thirdBossActions[skill])
                         {   
+                            if(prev == (2105 || 1105) && thirdBossActions[skill] == (2106 || 1106)) // check skill sequence to call the back swipe early 1105->1106->next = back swipe
+                            {
+                                if(prev == 1105) {sendMessage(thirdBossActions[1111].msg);}                                
+                                else             {sendMessage(thirdBossActions[2111].msg);}
+                            }
                             sendMessage(thirdBossActions[skill].msg);
+                            prev=thirdBossActions[skill];
                         }
                     break;
                     default: // do nothing
